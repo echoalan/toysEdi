@@ -1,0 +1,17 @@
+<nav class="nav">
+    <div class="casper-nav">
+        <div class="casper-nav-busqueda">
+            <img src="../../assets/lupa.png" alt="">
+            <input type="text">
+        </div>
+        <div class="casper-nav-cart-menu">
+            <div class="menu" *ngIf="seeMenu">
+                <a routerLink="/">Inicio</a>
+                <a routerLink="/contacto">Contacto</a>
+                <a routerLink="/nosotros">Nosotros</a>
+            </div>
+            <app-cart></app-cart>
+            <button (click)="showMenu()" id="menu">Menú</button>
+        </div>
+</div>
+</nav>

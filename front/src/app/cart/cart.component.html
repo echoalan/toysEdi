@@ -1,0 +1,22 @@
+<div class="action-cart"> 
+    <img src="../../assets/cart.png" (click)="showCart()">
+</div>
+<div *ngIf="verCarrito" class="content-cart">
+    <p class="total">Total: ${{ cartService.calcularTotal() }}</p>
+    <div class="casper-cart">
+        <div *ngFor="let product of cartService.productos" class="cart">
+            <div class="cart-img">
+                <img src="../../assets/{{product.IMG}}" alt="">
+            </div>
+            <div class="body-cart">
+                <p class="cart-name">{{ product.name }}</p>
+                <p class="cart-price">${{product.PRICE}}</p>
+            </div>
+            <button (click)="eliminarProducto(cartService.productos.indexOf(product))" class="delete-cart">x</button>
+        </div>
+    </div>
+</div>
+
+
+
+

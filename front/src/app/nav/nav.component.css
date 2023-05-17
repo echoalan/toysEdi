@@ -1,0 +1,67 @@
+.nav {
+    background-color: #323232;
+    display: flex;
+    justify-content: center;
+}
+
+.casper-nav {
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.casper-nav-busqueda{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.casper-nav-busqueda input{
+    border: none;
+    width: 250px;
+}
+
+.casper-nav-busqueda img{
+    padding: 5px;
+}
+
+
+.casper-nav-cart-menu{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.casper-nav button{
+    border: none;
+    background-color: #323232;
+    color: #fff;
+    font-size: 17px;
+    padding: 10px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    position: fixed;
+    background-color: #202020;
+    margin-top: 40px;
+    padding: 10px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.menu a:hover {
+    color: #000;
+    background-color: #fff;
+    border: 4px;
+}

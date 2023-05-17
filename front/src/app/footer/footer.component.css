@@ -1,0 +1,16 @@
+.footer{
+  background-color: #202020;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  flex-direction: column;
+}
+
+.footer h3, p{
+  padding: 5px;
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+}
+
