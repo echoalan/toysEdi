@@ -3,6 +3,7 @@
 </div>
 <div *ngIf="verCarrito" class="content-cart">
     <p class="total">Total: ${{ cartService.calcularTotal() }}</p>
+    <a routerLink="/pagar">Finalizar Compra</a>
     <div class="casper-cart">
         <div *ngFor="let product of cartService.productos" class="cart">
             <div class="cart-img">

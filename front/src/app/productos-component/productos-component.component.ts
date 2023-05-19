@@ -37,8 +37,6 @@ export class ProductosComponentComponent {
     }
   }
 
-  
-
   ngOnInit(): void {
     this.productService.getProducts().subscribe((data) => {
       this.products = data;

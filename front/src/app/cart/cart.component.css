@@ -1,5 +1,5 @@
 .content-cart{
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 82px;
     width: 300px;

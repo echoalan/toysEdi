@@ -12,11 +12,13 @@ import { ProductService } from './service/product.service';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { PayComponent } from './pay/pay.component';
 
 const routes: Routes = [
   { path: '', component: ProductosComponentComponent },
   { path: 'contacto', component: ContactComponent },
   { path: 'nosotros', component: AboutComponent },
+  { path: 'pagar', component: PayComponent}
 ];
 
 
@@ -29,7 +31,8 @@ const routes: Routes = [
     NavComponent,
     AboutComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    PayComponent
   ],
   imports: [
     BrowserModule,
