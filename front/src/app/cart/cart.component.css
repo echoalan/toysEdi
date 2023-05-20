@@ -2,11 +2,18 @@
     position: absolute;
     right: 0;
     top: 82px;
-    width: 300px;
+    width: 400px;
     height: 600px;
     background-color: #202020;
     transition: .5s;
     overflow: scroll;
+}
+
+.a-finalizar-compra{
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .casper-cart{

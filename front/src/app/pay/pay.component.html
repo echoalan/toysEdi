@@ -1,8 +1,19 @@
-<div *ngFor="let product of cartService.productos">
-    
-    <p>{{product.name}}</p>
-    <p>{{product.PRICE}}</p>
-
-</div>
-
-<h1>Esto anda pero lo otro no je</h1>
+<article class="article-finalizar-compra">
+    <div *ngIf="productsPay.length < 1" class="sin-productos">
+        <h2>Parece qué todavía no has agregado <a routerLink="/">productos</a> al carrito.</h2>
+    </div>
+    <div *ngIf="productsPay.length >= 1" class="lista-productos-finaliazr-compra">
+        <div class="header-finalizar-compra">
+            <p>Producto</p>
+            <p>Precio</p>
+        </div>
+        <div *ngFor="let product of productsPay" class="body-products-finaliar-compra">    
+            <p>{{product.name}}</p>
+            <p>{{product.PRICE}}</p>
+        </div>    
+        <div class="content-total">
+            <p>total:${{ cartService.calcularTotal() }}</p>
+            <button>Pagar</button>
+        </div>
+    </div>
+</article>

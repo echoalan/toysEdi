@@ -1,0 +1,41 @@
+.article-finalizar-compra{
+    height: 75vh;
+}
+
+.sin-productos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.sin-productos h2{
+    color: #323232;
+    font-weight: 500;
+}
+
+.lista-productos-finaliazr-compra{
+    border: 1px solid;
+    padding: 10px;
+    width: 400px;
+}
+
+.header-finalizar-compra{
+    display: flex;
+}
+
+.header-finalizar-compra p {
+    width: 100%;
+    padding: 15px;
+}
+
+
+.body-products-finaliar-compra{
+    display: flex;
+    flex-direction: row;
+}
+
+.body-products-finaliar-compra p{
+    width: 100%;
+    padding: 7px;
+} 

@@ -8,10 +8,16 @@ import { CartService } from '../service/cart.service';
 })
 export class PayComponent {
 
+
+
+
   constructor(public cartService: CartService) {}
 
   ngOnInit() {
 
   }
+
+
+  productsPay = this.cartService.productos;
 
 }
