@@ -1,7 +1,7 @@
 .content-cart{
     position: absolute;
     right: 0;
-    top: 82px;
+    top: 100px;
     width: 400px;
     height: 600px;
     background-color: #202020;
@@ -63,7 +63,7 @@
 }
 
 .cart-price{
-    color: rgb(83, 180, 107);
+    color: #53b46b;
     font-weight: bold;
     text-align: center;
 }
@@ -72,7 +72,7 @@
     width: 10%;
     height: 30px;
     border: none;
-    background-color: rgb(212, 63, 63);
+    background-color: #d43f3f;
     color: #fff;
     font-size: 20px;
 }

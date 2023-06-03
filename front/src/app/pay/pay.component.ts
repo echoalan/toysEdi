@@ -8,8 +8,9 @@ import { CartService } from '../service/cart.service';
 })
 export class PayComponent {
 
-
-
+  finishPay(){
+    alert(`COMO FUE QUE ME DEJASTE DE AMAAAAAAAR <3<3<3`)
+  }
 
   constructor(public cartService: CartService) {}
 

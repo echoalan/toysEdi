@@ -1,5 +1,4 @@
 .article-finalizar-compra{
-    height: 75vh;
 }
 
 .sin-productos{
@@ -15,27 +14,58 @@
 }
 
 .lista-productos-finaliazr-compra{
-    border: 1px solid;
     padding: 10px;
     width: 400px;
-}
-
-.header-finalizar-compra{
     display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #202020;
+    margin: 15px;
 }
-
-.header-finalizar-compra p {
-    width: 100%;
-    padding: 15px;
-}
-
 
 .body-products-finaliar-compra{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    background-color: #323232;
+    padding: 5px;
 }
 
 .body-products-finaliar-compra p{
     width: 100%;
     padding: 7px;
+    font-weight: bold;
+    text-align: center;
 } 
+
+.p-name{
+    color: #fff;
+}
+
+.p-price{
+    color: #53b46b;
+}
+
+.img-products-finalizar-compra{
+    width: 64px;
+}
+
+
+.content-total{
+    border: 1px solid red;
+}
+
+.content-total p {
+    color: #fff;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.content-total button{
+    border: none;
+    background-color: rgb(51, 65, 94);
+    color: #fff;
+    padding: 5px;
+    margin: 5px;
+    width: 100px;
+}

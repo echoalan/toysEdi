@@ -8,7 +8,6 @@ class Product {
 
     //payProduct
 
-    //etc..
 }
 
 module.exports = Product;
