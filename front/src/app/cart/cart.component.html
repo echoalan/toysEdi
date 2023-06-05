@@ -1,9 +1,16 @@
 <div class="action-cart">
-    <img src="../../assets/cart.png" (click)="showCart()">
+    <img src="../../assets/cart.png" (click)="showCart()" class="icon-cart">
+    <span class="length-product">{{cartService.productos.length}}</span>
 </div>
 <div *ngIf="verCarrito" class="content-cart">
-    <p class="total">Total: ${{ cartService.calcularTotal() }}</p>
-    <a routerLink="/pagar" class="a-finalizar-compra">Finalizar Compra</a>
+   <div class="content-total-finish-compra">
+        <div class="content-pay">
+            <a routerLink="/pagar" class="pay">Finalizar Compra</a>
+        </div>
+        <div class="content-total">
+            <p class="total">Total: ${{ cartService.calcularTotal() }}</p>
+        </div>
+    </div>
     <div class="casper-cart">
         <div *ngFor="let product of cartService.productos" class="cart">
             <div class="cart-img">

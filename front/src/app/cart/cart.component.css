@@ -1,3 +1,21 @@
+.action-cart{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.length-product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f34040;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+}
+
 .content-cart{
     position: absolute;
     right: 0;
@@ -9,11 +27,32 @@
     overflow: scroll;
 }
 
-.a-finalizar-compra{
+.content-total-finish-compra{
+    padding: 5px;
+}
+
+.content-pay{
+    padding: 5px;
+    text-align: center;
+    background-color: #53b46b;
+}
+
+.pay{
     color: #fff;
     padding: 10px;
     text-decoration: none;
     font-weight: bold;
+}
+
+.content-total{
+    background-color: #1c63a5;
+}
+
+.total{
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
 }
 
 .casper-cart{
@@ -31,13 +70,6 @@
     background-color: #323232;
 }
 
-.total{
-    color: #fff;
-    font-weight: bold;
-    text-align: center;
-    padding: 5px;
-}
-
 .cart-img{
     width: 25%;
     display: flex;
@@ -46,7 +78,7 @@
 }
 
 .cart-img img {
-    width: 90%;
+    width: 80%;
 }
 
 .body-cart{
@@ -72,14 +104,9 @@
     width: 10%;
     height: 30px;
     border: none;
-    background-color: #d43f3f;
+    background-color: #f34040;
     color: #fff;
     font-size: 20px;
 }
 
-.action-cart{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 

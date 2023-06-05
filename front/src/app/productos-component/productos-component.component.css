@@ -21,6 +21,20 @@
 	width: 20%;
 	padding: 15px;
 	background-color: #fff;
+	height: 400px;
+}
+
+.body-category{
+	padding: 5px;
+}
+
+.body-category h4{
+	color: #323232;
+}
+
+.body-category p{
+	padding: 5px;
+	border-bottom: 1px solid #c9c9c9;
 }
 
 /*estilos de cada productos*/

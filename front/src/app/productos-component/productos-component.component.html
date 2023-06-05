@@ -4,13 +4,14 @@
             <h3>Categorias</h3>
         </div>
         <div class="body-category">
-            <p>Juegos de mesa</p>
-            <p>Juegos de construccion</p>
-            <p></p>
+            <h4>Marcas</h4>
+            <div *ngFor="let productos of products">
+                <p (click)="filtrarProd(productos.BRAND)">{{productos.BRAND}}</p>
+            </div>
         </div>
     </div>
     <div class="content-products">
-        <div *ngFor="let producto of products" class="productos"> 
+        <div *ngFor="let producto of filteredProducts" class="productos"> 
             <div class="header-productos">
                 <img src="../../assets/{{producto.IMG}}" alt="">
             </div>

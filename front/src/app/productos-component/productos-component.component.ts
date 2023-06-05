@@ -8,10 +8,12 @@ import { ProductService } from '../service/product.service';
   styleUrls: ['./productos-component.component.css']
 })
 export class ProductosComponentComponent {
-  
+
   products: any;
 
-  constructor(private CartService: CartService, private productService: ProductService) {}
+  filteredProducts: any;
+
+  constructor(private CartService: CartService, private productService: ProductService) { }
 
   agregarProducto(producto: any) {
     this.mostrarMensaje('Producto agregado');
@@ -27,12 +29,11 @@ export class ProductosComponentComponent {
       mensajeElemento.innerText = mensaje;
       mensajeElemento.classList.remove('oculto');
     }
-
   }
-  
+
   ocultarMensaje() {
     const mensajeElemento = document.getElementById('mensaje');
-    if(mensajeElemento){
+    if (mensajeElemento) {
       mensajeElemento.classList.add('oculto');
     }
   }
@@ -40,7 +41,18 @@ export class ProductosComponentComponent {
   ngOnInit(): void {
     this.productService.getProducts().subscribe((data) => {
       this.products = data;
+      this.filteredProducts = data;
     });
   }
+
+  filtrarProd(brand: any) {
+    if (brand) {
+      this.filteredProducts = this.products.filter((product: any) => product.BRAND === brand);
+    } else {
+      this.filteredProducts = this.products;
+    }
+  }
+
+
 
 }
