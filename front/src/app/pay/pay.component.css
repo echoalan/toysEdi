@@ -1,5 +1,23 @@
 .article-finalizar-compra{
+    display: flex;
+    justify-content: center;
 }
+
+.content-total p {
+    color: #fff;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.content-total button{
+    border: none;
+    background-color: rgb(51, 65, 94);
+    color: #fff;
+    padding: 5px;
+    margin: 5px;
+    width: 100px;
+}
+
 
 .sin-productos{
     display: flex;
@@ -15,12 +33,13 @@
 
 .lista-productos-finaliazr-compra{
     padding: 10px;
-    width: 400px;
+    width: 700px;
     display: flex;
     flex-direction: column;
     gap: 15px;
     background-color: #202020;
     margin: 15px;
+    border-radius: 6px;
 }
 
 .body-products-finaliar-compra{
@@ -51,21 +70,3 @@
 }
 
 
-.content-total{
-    border: 1px solid red;
-}
-
-.content-total p {
-    color: #fff;
-    font-weight: bold;
-    padding: 5px;
-}
-
-.content-total button{
-    border: none;
-    background-color: rgb(51, 65, 94);
-    color: #fff;
-    padding: 5px;
-    margin: 5px;
-    width: 100px;
-}

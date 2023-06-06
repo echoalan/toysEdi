@@ -3,15 +3,15 @@
         <h2>Parece qué todavía no has agregado <a routerLink="/">productos</a> al carrito.</h2>
     </div>
     <div *ngIf="productsPay.length >= 1" class="lista-productos-finaliazr-compra">
-        <div *ngFor="let product of productsPay" class="body-products-finaliar-compra">    
-            <p class="p-name">{{product.name}}</p>
-            <p class="p-price">${{product.PRICE}}</p>
-            <img src="../../assets/{{product.IMG}}" class="img-products-finalizar-compra">
-        </div>    
         <div class="content-total">
             <p>Total:${{ cartService.calcularTotal() }}</p>
             <button (click)="finishPay()">Pagar</button>
             <p>Seguir <a routerLink="">comprando</a></p>
         </div>
+        <div *ngFor="let product of productsPay" class="body-products-finaliar-compra">    
+            <p class="p-name">{{product.name}}</p>
+            <p class="p-price">${{product.PRICE}}</p>
+            <img src="../../assets/{{product.IMG}}" class="img-products-finalizar-compra">
+        </div>    
     </div>
 </article>

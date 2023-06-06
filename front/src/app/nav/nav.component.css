@@ -13,6 +13,7 @@
 }
 
 
+
 .casper-nav-busqueda{
     display: flex;
     flex-direction: row;
@@ -42,6 +43,7 @@
     color: #fff;
     font-size: 17px;
     padding: 10px;
+    cursor: pointer;
 }
 
 .menu{

@@ -6,7 +6,6 @@
 	background-color: #dfdfdf;
 }
 
-
 .content-products {
 	background-color: #fff;
 	display: flex;
@@ -15,9 +14,11 @@
 	gap: 15px;
 	width: 80%;
 	padding: 15px;
+	border-radius: 6px;
 }
 
 .content-category{
+	border-radius: 6px;
 	width: 20%;
 	padding: 15px;
 	background-color: #fff;
@@ -35,11 +36,13 @@
 .body-category p{
 	padding: 5px;
 	border-bottom: 1px solid #c9c9c9;
+	cursor: pointer;
 }
 
 /*estilos de cada productos*/
 
 .productos {
+	border-radius: 6px;
 	padding: 15px;
 	width: 250px;
 	height: 350px;
@@ -94,6 +97,8 @@
 	border: none;
 	color: #fff;
 	padding: 5px 15px;
+	border-radius: 2px;
+	cursor: pointer;
 }
 
 

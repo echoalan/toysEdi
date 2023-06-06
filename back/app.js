@@ -11,7 +11,7 @@ app.use(express.json());
 //Routes
 
 const productRoutes = require('./routes/productRoutes');
-app.use('/products', productRoutes);
+app.use('/', productRoutes);
 
 
 //Server Star

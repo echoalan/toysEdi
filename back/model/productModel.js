@@ -6,8 +6,6 @@ class Product {
         connection.query(sql, callback);
     }
 
-    //payProduct
-
 }
 
 module.exports = Product;

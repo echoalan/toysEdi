@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CartService } from '../service/cart.service';
 import { ProductService } from '../service/product.service';
+import { BrandService } from '../service/brand.service';
 
 @Component({
   selector: 'app-productos-component',
@@ -11,9 +12,11 @@ export class ProductosComponentComponent {
 
   products: any;
 
+  brands: any;
+
   filteredProducts: any;
 
-  constructor(private CartService: CartService, private productService: ProductService) { }
+  constructor(private CartService: CartService, private productService: ProductService, private BrandService: BrandService) { }
 
   agregarProducto(producto: any) {
     this.mostrarMensaje('Producto agregado');
@@ -43,6 +46,10 @@ export class ProductosComponentComponent {
       this.products = data;
       this.filteredProducts = data;
     });
+
+    this.BrandService.getBrand().subscribe((data) =>{
+      this.brands = data;
+    });
   }
 
   filtrarProd(brand: any) {
@@ -52,7 +59,5 @@ export class ProductosComponentComponent {
       this.filteredProducts = this.products;
     }
   }
-
-
 
 }

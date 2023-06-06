@@ -1,6 +1,7 @@
 .action-cart{
     display: flex;
     justify-content: flex-start;
+    cursor: pointer;
 }
 
 .length-product{
@@ -28,23 +29,23 @@
 }
 
 .content-total-finish-compra{
-    padding: 5px;
+    padding: 15px;
 }
 
 .content-pay{
-    padding: 5px;
+    padding: 10px;
     text-align: center;
     background-color: #53b46b;
 }
 
 .pay{
     color: #fff;
-    padding: 10px;
     text-decoration: none;
     font-weight: bold;
 }
 
 .content-total{
+    padding: 10px;
     background-color: #1c63a5;
 }
 
@@ -52,7 +53,6 @@
     color: #fff;
     font-weight: bold;
     text-align: center;
-    padding: 5px;
 }
 
 .casper-cart{

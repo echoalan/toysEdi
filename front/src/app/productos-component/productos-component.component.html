@@ -5,8 +5,8 @@
         </div>
         <div class="body-category">
             <h4>Marcas</h4>
-            <div *ngFor="let productos of products">
-                <p (click)="filtrarProd(productos.BRAND)">{{productos.BRAND}}</p>
+            <div *ngFor="let brand of brands">
+                <p (click)="filtrarProd(brand.BRAND)">{{brand.BRAND}}</p>
             </div>
         </div>
     </div>
